@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $(document).ready(function () {
+            listing();
+        });
+
+        function listing() {
+            $.ajax({
+                type: 'GET',
+                url: '/login',
+                data: {},
+                success: function (response) {
+
+                }
+
+
+    </script>
+</head>
+<body>
+<div class="input_box"></div>
+    <input type="text" placeholder="아이디" id="loginID" name="loginID"><br>
+    <input type="password" placeholder="비밀번호" id="loginPW"><br>
+    <button type="submit">로그인</button>
+</body>
+</html>
