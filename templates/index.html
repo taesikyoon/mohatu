@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 
-<a href={{url_for("login")}}><button>로그인하기</button></a>
-<a href=""><button>회원가입하기</button>
-</a>
-
+<a href="/login"><button>로그인하기</button></a>
+<a href=""><button>회원가입하기</button></a>
+{% if login == True %}
 <p>로그인이 되어버렸어요 {{username}}님 반갑습니다</p>
-
+{% endif %}
 </body>
 </html>
